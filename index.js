@@ -3,7 +3,7 @@ const app     = express()            // creando la aplicacion apartir de express
 const path    = require('path')      // importado modulo Path
 
 // settings
-app.set('port',3000)
+app.set('port',3000);
 
 // middlewares
 app.use(express.static(path.join(__dirname, 'public')))

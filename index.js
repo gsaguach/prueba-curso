@@ -7,7 +7,17 @@ app.set('port',3000);
 
 // middlewares
 app.use(express.static(path.join(__dirname, 'public')))
-console.log(__dirname)
+console.log(__dirname);
+
+
+app.get('/hola',(req,res)=>{
+    res.send('ruta Hola');
+});
+
+app.get('/adios',(req,res)=>{
+    res.send('ruta Adios');
+});
+
 
 //enviar informacion a nuestro navegador trabajando con rutas
 //Al tener el Middlewares,  esto ya no lo ejecuta

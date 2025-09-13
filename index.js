@@ -19,6 +19,10 @@ app.get('/adios',(req,res)=>{
 });
 
 
+app.post('/login',(req,res)=>{
+    res.send('ruta de login nueva');
+});
+
 //enviar informacion a nuestro navegador trabajando con rutas
 //Al tener el Middlewares,  esto ya no lo ejecuta
 app.get('/',(req,res)=>{

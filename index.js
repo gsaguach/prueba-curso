@@ -23,6 +23,10 @@ app.post('/login',(req,res)=>{
     res.send('ruta de login nueva');
 });
 
+app.post('/registro',(req,res)=>{
+    res.send('recibiendo informacion de registro');
+});
+
 //enviar informacion a nuestro navegador trabajando con rutas
 //Al tener el Middlewares,  esto ya no lo ejecuta
 app.get('/',(req,res)=>{
